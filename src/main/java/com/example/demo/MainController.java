@@ -36,7 +36,7 @@ public class MainController {
 		ResponseEntity<Employee> e=restTemplate.getForEntity(uri,Employee.class);
 		Employee em=e.getBody();
 		System.out.println(em.getName());
-		
+		 
 		
 		MetaData metaData=new MetaData();
 		metaData.setAge(em.getAge());
